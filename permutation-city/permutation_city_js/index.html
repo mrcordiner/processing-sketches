@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- pyp5js index.html boilerplate -->
+<html lang="">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_sketch - pyp5js (using pyodide)</title>
+    <style> body, html, canvas {padding: 0; margin: 0; overflow: hidden;} </style>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    
+    
+
+  </head>
+
+  <body>
+
+<div>
+
+</div>
+    <div style="float:left;">
+      <h2>Permuation City</h2>
+      <p>
+        A first test of using Python in the browser using pyp5.js. Python code is compiled to Javascript using Transcrypt and runs using the power of P5.js!
+      </p>
+      <p>Permuation City is a fascinating novel set in the near future where human consciousness can be "copied" into a computer. I haven't yet finished the book but I wanted to explore coding the book cover in Processing. Part of the story concerns itself with a kind of steganography where running code needs to hidden into an exsisiting area of active memory. I think that the designer was trying to show an aspect of this by "hidding" the title of the book into a grid of random text. </p>
+
+      <p>In this Python/P5 sketch you can encode your own message into the book cover and change the rate at which it randomizes the cover. </p>
+    
+    <p>I am excited about the possibilities of being able to write Python/Processing code and have it run on the web. </p>
+    </div>
+    
+
+    <div id="sketch-holder" style="float:right;width:450px;">
+          <!-- You sketch will go here! -->
+    </div>
+
+    <script src="https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js"></script>
+    <script src="/static/perm-city/static/p5.js"></script>
+    
+    <script src="/static/perm-city/target/target_sketch.js"  type="module"></script>
+
+
+
+  </body>
+</html>
